@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sansolue.gamedev.ideren.controller.MainController">
+   <top>
+      <VBox prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button mnemonicParsing="false" />
+                  <Button mnemonicParsing="false" />
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Files">
+               <content>
+                  <TreeView prefHeight="200.0" prefWidth="200.0" />
+               </content>
+          </Tab>
+          <Tab text="Characters">
+               <content>
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </left>
+   <center>
+      <TabPane minHeight="500.0" minWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Untitled Tab 1" />
+          <Tab text="Untitled Tab 2" />
+        </tabs>
+      </TabPane>
+   </center>
+   <right>
+      <Accordion BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" text="untitled 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="untitled 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="untitled 3">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </right>
+   <bottom>
+      <VBox prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Output">
+                     <content>
+                        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                </Tab>
+                <Tab text="Terminal">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <HBox prefHeight="38.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
